@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Oluwatobi Kelani – Electronics &amp; Robotics Projects</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-container": "#fffbff",
+              "secondary-container": "#cfe6f2",
+              "inverse-surface": "#2e3132",
+              "inverse-on-surface": "#f0f1f2",
+              "surface-container-low": "#f3f4f5",
+              "outline": "#717786",
+              "on-secondary": "#ffffff",
+              "error-container": "#ffdad6",
+              "background": "#f8f9fa",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-container": "#526772",
+              "primary": "#0059bb",
+              "surface-container": "#edeeef",
+              "on-error-container": "#93000a",
+              "on-error": "#ffffff",
+              "on-surface-variant": "#414754",
+              "inverse-primary": "#adc7ff",
+              "on-secondary-fixed": "#071e27",
+              "tertiary": "#9e3d00",
+              "surface-variant": "#e1e3e4",
+              "surface": "#f8f9fa",
+              "surface-container-high": "#e7e8e9",
+              "on-background": "#191c1d",
+              "on-tertiary-fixed": "#351000",
+              "surface-tint": "#005bc0",
+              "on-tertiary-fixed-variant": "#7c2e00",
+              "primary-fixed-dim": "#adc7ff",
+              "surface-container-highest": "#e1e3e4",
+              "on-surface": "#191c1d",
+              "secondary": "#4c616c",
+              "primary-container": "#0070ea",
+              "on-primary-fixed-variant": "#004493",
+              "tertiary-fixed-dim": "#ffb695",
+              "on-primary": "#ffffff",
+              "on-secondary-fixed-variant": "#354a53",
+              "error": "#ba1a1a",
+              "secondary-fixed": "#cfe6f2",
+              "on-primary-container": "#fefcff",
+              "secondary-fixed-dim": "#b4cad6",
+              "surface-dim": "#d9dadb",
+              "tertiary-fixed": "#ffdbcc",
+              "surface-bright": "#f8f9fa",
+              "tertiary-container": "#c64f00",
+              "primary-fixed": "#d8e2ff",
+              "outline-variant": "#c1c6d7",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed": "#001a41"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        display: inline-block;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr;
+      }
+      .circuit-pattern {
+        background-image: radial-gradient(circle, #0059bb11 1px, transparent 1px);
+        background-size: 32px 32px;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background font-body text-on-surface">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-surface-variant">
+<nav class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 bg-primary flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined text-white" data-icon="settings_input_component">settings_input_component</span>
+</div>
+<span class="text-xl font-extrabold text-slate-900 tracking-tight font-headline">Oluwatobi Kelani</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-primary font-bold font-headline" href="index.html">Home</a>
+<a class="text-slate-600 hover:text-primary transition-colors font-headline" href="project.html">Projects</a>
+<a class="text-slate-600 hover:text-primary transition-colors font-headline" href="index.html#skills">Skills</a>
+<a class="text-slate-600 hover:text-primary transition-colors font-headline" href="contact.html">Contact</a>
+</div>
+<button class="md:hidden p-2 text-slate-900">
+<a class=text-primary font-bold font-headline href="resume.html">
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-bold shadow-md hover:shadow-primary/20 transition-all">Resume</button>
+</button>
+</nav>
+</header>
+<main class="pt-24 pb-32 circuit-pattern min-h-screen">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-6 py-12 md:py-20">
+<div class="max-w-3xl">
+<span class="inline-block py-1 px-3 rounded-full bg-primary-fixed text-on-primary-fixed text-xs font-bold tracking-widest uppercase mb-6 font-headline">Portfolio Gallery</span>
+<h2 class="text-5xl md:text-7xl font-extrabold font-headline tracking-tighter text-on-background leading-none mb-6">
+                    Electronics &amp; Robotics Projects
+                </h2>
+<p class="text-xl text-on-surface-variant leading-relaxed font-body">
+                    Innovative educational solutions and custom hardware designs. Each project is engineered with precision to bridge the gap between complex electronics and accessible learning.
+                </p>
+</div>
+</section>
+<!-- Category Filter -->
+<section class="max-w-7xl mx-auto px-6 mb-12">
+<div class="flex flex-wrap gap-3 items-center">
+<button class="px-6 py-2 rounded-full bg-primary text-on-primary font-headline font-medium transition-all shadow-md">All</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-highest text-on-surface-variant font-headline font-medium hover:bg-surface-variant transition-all">Robotics</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-highest text-on-surface-variant font-headline font-medium hover:bg-surface-variant transition-all">IoT</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-highest text-on-surface-variant font-headline font-medium hover:bg-surface-variant transition-all">Educational Kits</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-highest text-on-surface-variant font-headline font-medium hover:bg-surface-variant transition-all">Wearables</button>
+</div>
+</section>
+<!-- Projects Grid -->
+<section class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1: Smart Doorbell -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 hover:shadow-[0_20px_40px_rgba(0,89,187,0.06)] group">
+<div class="h-64 overflow-hidden relative">
+<img alt="Smart Doorbell System" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Modern smart home doorbell with integrated camera and blue ring light, mounted on a sleek dark wood entrance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQ_XwWYCnS8rnT0bHzZ5po6cx4Be0LfZGY55RNvWruQvEKm-g-iuyBPASbqZ0l3n1SyDJ7Vi50k1VDwqlxJy_sxj--oJu_HxJ75Tx2zaVLaOKe2gujslrVCHTt_UZa9pPnqXTr0dFAWgJtcYSjUhBozvnWxvR0BOP8JUDDVZBzAd16_yA0IJgGkigvyFT0UgQvdCQG2HPVTNTewQIBcJpTX1dtvY2gM1ojYtkZzwUwavSpMs__FFM5z1vYra48eZvuxSMHIUZKabw"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full text-xs font-bold font-headline uppercase tracking-wider">IoT</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold font-headline text-on-surface mb-3">Smart Doorbell System</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Wi-Fi enabled security solution with real-time alerts and high-definition video streaming.</p>
+<button class="flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-4 transition-all">
+                            View Project Details
+                            <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 2: Unit Allocator -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 hover:shadow-[0_20px_40px_rgba(0,89,187,0.06)] group">
+<div class="h-64 overflow-hidden relative">
+<img alt="Unit Allocator" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Industrial power management distribution board with circuit breakers and digital power meters in a laboratory setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCla_V5bI_w_f747bbubqIr60F03UCFMDcSJLKSe0CoogfCDUAKEotIYRS7B5YtPvcaF9oFFCYII4WTDCGEbpfud-f3NDQgBNkSw6jtz93CAkn3rpQli8MzGOj9ZM5METFCbLyGFa1gGROl7wRRipEzLO_zRMF3P5cQHevnDnNfIDMK_l4fuRNKr59QTtd-T5Fo26RNkdSGGFDCCYcHeTign5rXkWiWvUfDpcuNHqGDXi1ajjjCkYoIzPhXpJ9JD5z9RnTqgom9XRA"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full text-xs font-bold font-headline uppercase tracking-wider">Power</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold font-headline text-on-surface mb-3">Unit Allocator</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Precision power management for multi-tenanted environments using load balancing algorithms.</p>
+<button class="flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-4 transition-all">
+                            View Project Details
+                            <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 3: Fingerprint Attendance -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 hover:shadow-[0_20px_40px_rgba(0,89,187,0.06)] group">
+<div class="h-64 overflow-hidden relative">
+<img alt="Fingerprint Attendance System" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Biometric fingerprint scanner glowing with soft blue light being touched by a finger in a modern office environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeTJ4s3ivJdTYoxyaKZUzg4jQ6txh8VIsvt4HINE9NA7KsxWagcGJdcX64CrSLQk7teXY_d33qNhB69GmSm7M38pxsPeWvQc9a4ci6g3DKOzIQ4DduM4VFgnwJyumUqTCUQexZlXwyyb1zUEN6DiBg2Ntxa6KmawSemB-Y1g-R-athljdTnYaOhKk1Mu0yLuv9ukkl1GrIoFoA1jXt44wo85R5geayeiQ1VYRn0entzK_RQy1-GR3MHsXHFf-aWcxB67eeU4t3vQ8"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full text-xs font-bold font-headline uppercase tracking-wider">Security</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold font-headline text-on-surface mb-3">Fingerprint Attendance System</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Biometric logging for schools and corporate offices with real-time database synchronization.</p>
+<button class="flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-4 transition-all">
+                            View Project Details
+                            <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 4: Electronics Workshop -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 hover:shadow-[0_20px_40px_rgba(0,89,187,0.06)] group">
+<div class="h-64 overflow-hidden relative">
+<img alt="Electronics Workshop" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Close-up of students working with colorful electronic components, breadboards, and jumper wires in a bright classroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEOHb1w42Pmj2xXqFkbSSCkTXFRtcpyncQcAiwRmS6h7NBgKdvLD87od0yKcCtfB4AH_GIl4Fy2RKqMbFVfsAPmIc6l879lSodiM5-w5e0DRmsVL57S2-4BBgddFmAfnzyZWbHCqWFzRhS3V8EXG5AUUDTK2KqQ_P7RskKCF8zeLf86SrbazDbVCGKb3rNDj3zLGgyKimxZck_GMSMIcMS9dv8SrCy2SN2PYJTULn3uHSOJIcJZohTWJh1PU5EHqtdIm978Iqwf_Y"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full text-xs font-bold font-headline uppercase tracking-wider">Education</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold font-headline text-on-surface mb-3">Electronics Workshop for Students</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">A 4-week intensive program designed for hands-on learning of circuitry and logic.</p>
+<button class="flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-4 transition-all">
+                            View Project Details
+                            <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 5: Custom PCB Design -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 hover:shadow-[0_20px_40px_rgba(0,89,187,0.06)] group">
+<div class="h-64 overflow-hidden relative">
+<img alt="Custom PCB Design" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Macro photo of a custom designed green printed circuit board with perfectly soldered microchips and copper traces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRteqNgWuib9SXv2Zy5FuK4fkQlt-uCcVn_K_jL3yd8bHbsP-x6bGmbdfXKlir2deb-ibIexyHmzAd0-dJ0CbhdvxJnE527CALBccmumx4GOcNV5xMG6PgsNJKAyjtdvqUEnHLYps6kOBRjbl53mIphLn6T5KEla3WWEgbqv81A2nv7gs7fcrCdmYsvtUKsac0Vx5AG_2XcaDgdCp0JjigQ_fFtbcwo43ZK4HMZH4B0IwLEIPMo2Y4VN3llqoKlwk6iFHL78Votaw"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full text-xs font-bold font-headline uppercase tracking-wider">Robotics</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold font-headline text-on-surface mb-3">Custom PCB Design</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">High-performance circuit boards optimized for low-latency home automation tasks.</p>
+<button class="flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-4 transition-all">
+                            View Project Details
+                            <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 6: Heartbeat Monitoring -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 hover:shadow-[0_20px_40px_rgba(0,89,187,0.06)] group">
+<div class="h-64 overflow-hidden relative">
+<img alt="Heartbeat Monitoring Wristband" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Sleek biometric wearable wristband on a person's arm showing a glowing red pulse sensor against a futuristic background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB42I5gIQBZnOzfggHhNwNLbnPOYpkUd8vyJEp8xXMmRI0U51g7U1py6v0Om5GvMBbzaD4pr_ngRUhMlSmqBOnjmxsJgyKm0e5h6K74q9qcwT00JkgrRSxtMwRNwCjSiSXo_urFRxAMlXtHQapXxkQZVCLxrfwz-6X5uHVzYoDjysasDooD6I0mOyLPBwP0mi6Dm140EMwUjpoVVbFDMZlgK_ykKggnn3L_Js1DIUZpvFTH1ISHXvLkSiT4PoKMSuZk7BpNGsLh-TU"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full text-xs font-bold font-headline uppercase tracking-wider">Wearables</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold font-headline text-on-surface mb-3">Heartbeat Monitoring Wristband</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Wearable health technology utilizing PPG sensors for real-time fitness tracking.</p>
+<button class="flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-4 transition-all">
+                            View Project Details
+                            <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</article>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-100 dark:bg-slate-900 w-full py-12">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-4">
+<div class="flex flex-col gap-2">
+<span class="font-['Plus_Jakarta_Sans'] font-bold text-slate-900 dark:text-slate-100">Precision Lab</span>
+<p class="font-['Inter'] text-sm text-slate-500 dark:text-slate-400">© 2024 Precision Lab. Engineered for Education.</p>
+</div>
+<div class="flex gap-6">
+<a class="font-['Inter'] text-sm text-slate-500 hover:text-blue-500 transition-colors duration-200" href="#">LinkedIn</a>
+<a class="font-['Inter'] text-sm text-slate-500 hover:text-blue-500 transition-colors duration-200" href="#">GitHub</a>
+<a class="font-['Inter'] text-sm text-slate-500 hover:text-blue-500 transition-colors duration-200" href="#">ResearchGate</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/90 backdrop-blur-xl border-t border-surface-variant md:hidden z-50">
+<a class="flex flex-col items-center justify-center text-primary font-bold" href="index.html">
+<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-[10px] uppercase tracking-tighter">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500" href="project.html">
+<span class="material-symbols-outlined" data-icon="settings_input_component">settings_input_component</span>
+<span class="text-[10px] uppercase tracking-tighter">Projects</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500" href="index.html#skills">
+<span class="material-symbols-outlined" data-icon="architecture">architecture</span>
+<span class="text-[10px] uppercase tracking-tighter">Skills</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500" href="contact.html">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<span class="text-[10px] uppercase tracking-tighter">Contact</span>
+</a>
+</nav>
+</body></html>                   
