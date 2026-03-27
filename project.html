@@ -5,12 +5,11 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Oluwatobi Kelani – Electronics &amp; Robotics Projects</title>
 <!-- Material Symbols -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <!-- Tailwind CSS -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
@@ -92,13 +91,25 @@
         background-image: radial-gradient(circle, #0059bb11 1px, transparent 1px);
         background-size: 32px 32px;
       }
+      
+      /* Modal Animations */
+      @keyframes modalIn {
+        from { opacity: 0; transform: translateY(20px) scale(0.98); }
+        to { opacity: 1; transform: translateY(0) scale(1); }
+      }
+      .modal-animate-in {
+        animation: modalIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+      }
+      body.modal-open {
+        overflow: hidden;
+      }
     </style>
 <style>
     body {
       min-height: max(884px, 100dvh);
     }
   </style>
-  </head>
+</head>
 <body class="bg-background font-body text-on-surface">
 <!-- TopAppBar -->
 <header class="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-surface-variant">
@@ -119,6 +130,7 @@
 <a class=text-primary font-bold font-headline href="resume.html">
 <button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-bold shadow-md hover:shadow-primary/20 transition-all">Resume</button>
 </button>
+</a>
 </nav>
 </header>
 <main class="pt-24 pb-32 circuit-pattern min-h-screen">
@@ -158,7 +170,7 @@
 <div class="p-6">
 <h3 class="text-xl font-bold font-headline text-on-surface mb-3">Smart Doorbell System</h3>
 <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Wi-Fi enabled security solution with real-time alerts and high-definition video streaming.</p>
-<button class="flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-4 transition-all">
+<button class="view-project-btn flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-4 transition-all" data-project-id="smart-doorbell">
                             View Project Details
                             <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
 </button>
@@ -175,7 +187,7 @@
 <div class="p-6">
 <h3 class="text-xl font-bold font-headline text-on-surface mb-3">Unit Allocator</h3>
 <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Precision power management for multi-tenanted environments using load balancing algorithms.</p>
-<button class="flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-4 transition-all">
+<button class="view-project-btn flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-4 transition-all" data-project-id="unit-allocator">
                             View Project Details
                             <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
 </button>
@@ -192,7 +204,7 @@
 <div class="p-6">
 <h3 class="text-xl font-bold font-headline text-on-surface mb-3">Fingerprint Attendance System</h3>
 <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Biometric logging for schools and corporate offices with real-time database synchronization.</p>
-<button class="flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-4 transition-all">
+<button class="view-project-btn flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-4 transition-all" data-project-id="fingerprint-attendance">
                             View Project Details
                             <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
 </button>
@@ -209,7 +221,7 @@
 <div class="p-6">
 <h3 class="text-xl font-bold font-headline text-on-surface mb-3">Electronics Workshop for Students</h3>
 <p class="text-on-surface-variant text-sm leading-relaxed mb-6">A 4-week intensive program designed for hands-on learning of circuitry and logic.</p>
-<button class="flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-4 transition-all">
+<button class="view-project-btn flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-4 transition-all" data-project-id="electronics-workshop">
                             View Project Details
                             <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
 </button>
@@ -226,7 +238,7 @@
 <div class="p-6">
 <h3 class="text-xl font-bold font-headline text-on-surface mb-3">Custom PCB Design</h3>
 <p class="text-on-surface-variant text-sm leading-relaxed mb-6">High-performance circuit boards optimized for low-latency home automation tasks.</p>
-<button class="flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-4 transition-all">
+<button class="view-project-btn flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-4 transition-all" data-project-id="custom-pcb">
                             View Project Details
                             <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
 </button>
@@ -243,7 +255,7 @@
 <div class="p-6">
 <h3 class="text-xl font-bold font-headline text-on-surface mb-3">Heartbeat Monitoring Wristband</h3>
 <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Wearable health technology utilizing PPG sensors for real-time fitness tracking.</p>
-<button class="flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-4 transition-all">
+<button class="view-project-btn flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-4 transition-all" data-project-id="heartbeat-monitor">
                             View Project Details
                             <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
 </button>
@@ -252,6 +264,56 @@
 </div>
 </section>
 </main>
+<!-- Project Details Modal -->
+<div class="fixed inset-0 z-[60] hidden" id="projectModal">
+<!-- Backdrop -->
+<div class="absolute inset-0 bg-slate-900/40 backdrop-blur-md transition-opacity" id="modalBackdrop"></div>
+<!-- Modal Content Container -->
+<div class="relative w-full h-full overflow-y-auto flex items-center justify-center p-4 md:p-8">
+<div class="bg-white dark:bg-slate-900 w-full max-w-4xl rounded-2xl shadow-2xl overflow-hidden relative modal-animate-in">
+<!-- Close Button -->
+<button class="absolute top-4 right-4 z-10 bg-white/80 dark:bg-slate-800/80 backdrop-blur-md p-2 rounded-full hover:bg-white dark:hover:bg-slate-700 transition-colors shadow-sm" id="closeModal">
+<span class="material-symbols-outlined block" data-icon="close">close</span>
+</button>
+<!-- Hero Image -->
+<div class="h-64 md:h-96 w-full relative">
+<img alt="Project Hero" class="w-full h-full object-cover" id="modalImage" src=""/>
+<div class="absolute bottom-0 left-0 w-full p-6 md:p-8 bg-gradient-to-t from-slate-900/80 to-transparent">
+<span class="bg-primary text-on-primary px-3 py-1 rounded-full text-xs font-bold font-headline uppercase tracking-wider mb-2 inline-block" id="modalCategory">Category</span>
+<h2 class="text-3xl md:text-4xl font-extrabold font-headline text-white" id="modalTitle">Project Title</h2>
+</div>
+</div>
+<!-- Text Content -->
+<div class="p-6 md:p-10 space-y-8">
+<section>
+<h3 class="text-sm font-bold uppercase tracking-widest text-primary mb-3 font-headline">Overview</h3>
+<p class="text-lg text-on-surface-variant leading-relaxed font-body" id="modalDescription">Detailed description goes here...</p>
+</section>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<section>
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary" data-icon="settings_input_component">settings_input_component</span>
+<h3 class="text-sm font-bold uppercase tracking-widest text-on-surface font-headline">Technical Specs</h3>
+</div>
+<ul class="space-y-2 text-on-surface-variant" id="modalSpecs">
+<!-- List items injected by JS -->
+</ul>
+</section>
+<section>
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary" data-icon="school">school</span>
+<h3 class="text-sm font-bold uppercase tracking-widest text-on-surface font-headline">Educational Impact</h3>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed" id="modalImpact">Impact description goes here...</p>
+</section>
+</div>
+<div class="pt-6 border-t border-slate-100 dark:border-slate-800 flex justify-end">
+<button class="bg-primary text-on-primary px-8 py-3 rounded-xl font-headline font-bold text-sm uppercase tracking-widest active:scale-95 transition-transform" id="closeModalFooter">Close Project</button>
+</div>
+</div>
+</div>
+</div>
+</div>
 <!-- Footer -->
 <footer class="bg-slate-100 dark:bg-slate-900 w-full py-12">
 <div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-4">
@@ -285,4 +347,109 @@
 <span class="text-[10px] uppercase tracking-tighter">Contact</span>
 </a>
 </nav>
-</body></html>                   
+<!-- Floating Action Button - Only for Relevant Task -->
+<div class="fixed bottom-24 right-6 md:bottom-12 md:right-12 z-40">
+<button class="w-16 h-16 rounded-full bg-primary text-white shadow-2xl flex items-center justify-center hover:scale-110 active:scale-90 transition-all">
+<span class="material-symbols-outlined text-3xl" data-icon="chat">chat</span>
+</button>
+<script>
+    const projectData = {
+        'smart-doorbell': {
+            title: 'Smart Doorbell System',
+            category: 'IoT',
+            image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAQ_XwWYCnS8rnT0bHzZ5po6cx4Be0LfZGY55RNvWruQvEKm-g-iuyBPASbqZ0l3n1SyDJ7Vi50k1VDwqlxJy_sxj--oJu_HxJ75Tx2zaVLaOKe2gujslrVCHTt_UZa9pPnqXTr0dFAWgJtcYSjUhBozvnWxvR0BOP8JUDDVZBzAd16_yA0IJgGkigvyFT0UgQvdCQG2HPVTNTewQIBcJpTX1dtvY2gM1ojYtkZzwUwavSpMs__FFM5z1vYra48eZvuxSMHIUZKabw',
+            description: 'A comprehensive Wi-Fi enabled security solution that integrates motion detection, real-time video streaming, and two-way audio communication. Designed to enhance residential security through a modern, user-friendly interface.',
+            specs: ['ESP32-CAM Microcontroller', 'PIR Motion Sensor', 'LiPo Battery Management', 'Integrated Microphone & Speaker', '3D Printed Weatherproof Case'],
+            impact: 'Used as a cornerstone project in intermediate IoT workshops to teach students about network protocols, low-power camera interfacing, and mobile app integration.'
+        },
+        'unit-allocator': {
+            title: 'Unit Allocator',
+            category: 'Power',
+            image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCla_V5bI_w_f747bbubqIr60F03UCFMDcSJLKSe0CoogfCDUAKEotIYRS7B5YtPvcaF9oFFCYII4WTDCGEbpfud-f3NDQgBNkSw6jtz93CAkn3rpQli8MzGOj9ZM5METFCbLyGFa1gGROl7wRRipEzLO_zRMF3P5cQHevnDnNfIDMK_l4fuRNKr59QTtd-T5Fo26RNkdSGGFDCCYcHeTign5rXkWiWvUfDpcuNHqGDXi1ajjjCkYoIzPhXpJ9JD5z9RnTqgom9XRA',
+            description: 'An advanced industrial power management system that ensures equitable distribution of electricity in multi-tenanted environments. It utilizes smart load balancing to prevent grid overloads and provide detailed consumption analytics.',
+            specs: ['STM32 Arm Cortex-M4', 'Current & Voltage Sensors', 'Solid-State Relays', 'OLED Status Display', 'RS485 Modbus Communication'],
+            impact: 'Serves as a real-world demonstration for engineering students on power systems, industrial control logic, and high-voltage safety standards.'
+        },
+        'fingerprint-attendance': {
+            title: 'Fingerprint Attendance System',
+            category: 'Security',
+            image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBeTJ4s3ivJdTYoxyaKZUzg4jQ6txh8VIsvt4HINE9NA7KsxWagcGJdcX64CrSLQk7teXY_d33qNhB69GmSm7M38pxsPeWvQc9a4ci6g3DKOzIQ4DduM4VFgnwJyumUqTCUQexZlXwyyb1zUEN6DiBg2Ntxa6KmawSemB-Y1g-R-athljdTnYaOhKk1Mu0yLuv9ukkl1GrIoFoA1jXt44wo85R5geayeiQ1VYRn0entzK_RQy1-GR3MHsXHFf-aWcxB67eeU4t3vQ8',
+            description: 'A biometric logging system optimized for speed and accuracy. It synchronizes records to a cloud database in real-time, providing administrators with instant access to attendance metrics through a web dashboard.',
+            specs: ['FPM10A Fingerprint Sensor', 'ESP8266 NodeMCU', 'REST API Integration', 'EEPROM Data Backup', 'I2C LCD Display'],
+            impact: 'Highly effective in teaching data structures, cloud connectivity, and biometric security principles to secondary school students.'
+        },
+        'electronics-workshop': {
+            title: 'Electronics Workshop for Students',
+            category: 'Education',
+            image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCEOHb1w42Pmj2xXqFkbSSCkTXFRtcpyncQcAiwRmS6h7NBgKdvLD87od0yKcCtfB4AH_GIl4Fy2RKqMbFVfsAPmIc6l879lSodiM5-w5e0DRmsVL57S2-4BBgddFmAfnzyZWbHCqWFzRhS3V8EXG5AUUDTK2KqQ_P7RskKCF8zeLf86SrbazDbVCGKb3rNDj3zLGgyKimxZck_GMSMIcMS9dv8SrCy2SN2PYJTULn3uHSOJIcJZohTWJh1PU5EHqtdIm978Iqwf_Y',
+            description: 'A structured, hands-on learning program designed to demystify electronics. Students progress from basic components like resistors and LEDs to programming microcontrollers and building autonomous robots.',
+            specs: ['Arduino Starter Kits', 'Logic Gate Trainers', 'Multimeters & Oscilloscopes', 'Breadboard Modules', 'Interactive Curriculum'],
+            impact: 'Has empowered over 500 students with practical STEM skills, fostering a new generation of hardware engineers and innovators.'
+        },
+        'custom-pcb': {
+            title: 'Custom PCB Design',
+            category: 'Robotics',
+            image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBRteqNgWuib9SXv2Zy5FuK4fkQlt-uCcVn_K_jL3yd8bHbsP-x6bGmbdfXKlir2deb-ibIexyHmzAd0-dJ0CbhdvxJnE527CALBccmumx4GOcNV5xMG6PgsNJKAyjtdvqUEnHLYps6kOBRjbl53mIphLn6T5KEla3WWEgbqv81A2nv7gs7fcrCdmYsvtUKsac0Vx5AG_2XcaDgdCp0JjigQ_fFtbcwo43ZK4HMZH4B0IwLEIPMo2Y4VN3llqoKlwk6iFHL78Votaw',
+            description: 'Professional-grade printed circuit boards designed for high-frequency signals and efficient thermal management. These boards form the backbone of several proprietary robotics platforms.',
+            specs: ['KiCad / Altium Design', 'SMD Component Assembly', 'Multi-layer Routing', 'Controlled Impedance', 'Solder Mask & Silk Screening'],
+            impact: 'Teaches advanced students about manufacturing processes, signal integrity, and the transition from prototype to professional product.'
+        },
+        'heartbeat-monitor': {
+            title: 'Heartbeat Monitoring Wristband',
+            category: 'Wearables',
+            image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB42I5gIQBZnOzfggHhNwNLbnPOYpkUd8vyJEp8xXMmRI0U51g7U1py6v0Om5GvMBbzaD4pr_ngRUhMlSmqBOnjmxsJgyKm0e5h6K74q9qcwT00JkgrRSxtMwRNwCjSiSXo_urFRxAMlXtHQapXxkQZVCLxrfwz-6X5uHVzYoDjysasDooD6I0mOyLPBwP0mi6Dm140EMwUjpoVVbFDMZlgK_ykKggnn3L_Js1DIUZpvFTH1ISHXvLkSiT4PoKMSuZk7BpNGsLh-TU',
+            description: 'A wearable health tech device using photoplethysmogram (PPG) sensors to track heart rate and blood oxygen levels. It features a low-profile design and Bluetooth Low Energy (BLE) connectivity.',
+            specs: ['MAX30102 Biometric Sensor', 'ESP32-S3 Mini', '0.42" OLED Display', 'Flexible PCB Design', 'BLE 5.0 Stack'],
+            impact: 'Ideal for teaching human-machine interface design and the specific challenges of designing electronics for the human body.'
+        }
+    };
+
+    const modal = document.getElementById('projectModal');
+    const backdrop = document.getElementById('modalBackdrop');
+    const closeBtns = [document.getElementById('closeModal'), document.getElementById('closeModalFooter')];
+    const buttons = document.querySelectorAll('.view-project-btn');
+
+    const openModal = (id) => {
+        const data = projectData[id];
+        if (!data) return;
+
+        document.getElementById('modalTitle').textContent = data.title;
+        document.getElementById('modalCategory').textContent = data.category;
+        document.getElementById('modalImage').src = data.image;
+        document.getElementById('modalDescription').textContent = data.description;
+        document.getElementById('modalImpact').textContent = data.impact;
+
+        const specsList = document.getElementById('modalSpecs');
+        specsList.innerHTML = '';
+        data.specs.forEach(spec => {
+            const li = document.createElement('li');
+            li.className = 'flex items-center gap-2 text-sm';
+            li.innerHTML = `<span class="material-symbols-outlined text-xs text-blue-500" data-icon="check_circle">check_circle</span> ${spec}`;
+            specsList.appendChild(li);
+        });
+
+        modal.classList.remove('hidden');
+        document.body.classList.add('modal-open');
+    };
+
+    const closeModal = () => {
+        modal.classList.add('hidden');
+        document.body.classList.remove('modal-open');
+    };
+
+    buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const id = btn.getAttribute('data-project-id');
+            openModal(id);
+        });
+    });
+
+    closeBtns.forEach(btn => btn.addEventListener('click', closeModal));
+    backdrop.addEventListener('click', closeModal);
+
+    // Escape key to close
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeModal();
+    });
+</script>
+</body></html>
