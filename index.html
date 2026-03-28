@@ -295,7 +295,7 @@
 <h2 class="text-3xl md:text-4xl font-bold font-headline text-slate-900">Featured Projects</h2>
 <p class="text-on-surface-variant max-w-xl">A selection of engineering breakthroughs and educational milestones.</p>
 </div>
-<a class="text-primary font-bold flex items-center gap-2 group" href="#">
+<a class="text-primary font-bold flex items-center gap-2 group" href="project.html">
                         Explore All Projects
                         <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
 </a>
@@ -312,7 +312,7 @@
 <div class="p-8 space-y-4">
 <h3 class="text-2xl font-bold font-headline">Smart Doorbell System</h3>
 <p class="text-on-surface-variant">A Wi-Fi enabled security solution featuring real-time motion alerts and cloud-based logging for residential safety.</p>
-<button class="bg-surface-container-high text-on-surface px-6 py-3 rounded-xl font-bold w-full hover:bg-primary hover:text-on-primary transition-all">View Project</button>
+<a href="project.html"><button class="bg-surface-container-high text-on-surface px-6 py-3 rounded-xl font-bold w-full hover:bg-primary hover:text-on-primary transition-all">View Project</button></a>
 </div>
 </div>
 <!-- Project 2 -->
@@ -326,7 +326,7 @@
 <div class="p-8 space-y-4">
 <h3 class="text-2xl font-bold font-headline">Unit Allocator</h3>
 <p class="text-on-surface-variant">Precision power management system designed to monitor and distribute electrical units in multi-tenanted environments.</p>
-<button class="bg-surface-container-high text-on-surface px-6 py-3 rounded-xl font-bold w-full hover:bg-primary hover:text-on-primary transition-all">View Project</button>
+<a href="project.html"><button class="bg-surface-container-high text-on-surface px-6 py-3 rounded-xl font-bold w-full hover:bg-primary hover:text-on-primary transition-all">View Project</button></a>
 </div>
 </div>
 <!-- Project 3 -->
@@ -340,7 +340,7 @@
 <div class="p-8 space-y-4">
 <h3 class="text-2xl font-bold font-headline">Fingerprint Attendance System</h3>
 <p class="text-on-surface-variant">A high-accuracy biometric logging system developed to eliminate proxy attendance in corporate and educational settings.</p>
-<button class="bg-surface-container-high text-on-surface px-6 py-3 rounded-xl font-bold w-full hover:bg-primary hover:text-on-primary transition-all">View Project</button>
+<a href="project.html"><button class="bg-surface-container-high text-on-surface px-6 py-3 rounded-xl font-bold w-full hover:bg-primary hover:text-on-primary transition-all">View Project</button></a>
 </div>
 </div>
 <!-- Project 4 -->
@@ -354,7 +354,7 @@
 <div class="p-8 space-y-4">
 <h3 class="text-2xl font-bold font-headline">Electronics Workshop for Students</h3>
 <p class="text-on-surface-variant">A comprehensive 4-week program teaching circuit theory, soldering, and Arduino coding through build-along projects.</p>
-<button class="bg-surface-container-high text-on-surface px-6 py-3 rounded-xl font-bold w-full hover:bg-primary hover:text-on-primary transition-all">View Project</button>
+<a href="project.html"><button class="bg-surface-container-high text-on-surface px-6 py-3 rounded-xl font-bold w-full hover:bg-primary hover:text-on-primary transition-all">View Project</button></a>
 </div>
 </div>
 </div>
@@ -414,7 +414,7 @@
 </div>
 <div>
 <p class="text-sm text-slate-500 font-bold uppercase tracking-wider">Email Me</p>
-<p class="text-xl">hello@tobikelani.eng</p>
+<p class="text-xl">mattkelani97@gmail.com</p>
 </div>
 </div>
 <div class="flex items-center gap-4">
@@ -423,28 +423,29 @@
 </div>
 <div>
 <p class="text-sm text-slate-500 font-bold uppercase tracking-wider">Call Me</p>
-<p class="text-xl">+234 (0) 801 234 5678</p>
+<p class="text-xl">+234 (0) 912 353 0688</p>
 </div>
 </div>
 </div>
 </div>
 <div class="bg-white/5 backdrop-blur-lg p-8 rounded-3xl border border-white/10">
-<form class="space-y-6">
+<form class="space-y-6" id="contact-form">
 <div class="grid grid-cols-2 gap-6">
 <div class="space-y-2">
 <label class="text-sm font-medium text-slate-400">Your Name</label>
-<input class="w-full bg-white/10 border-transparent rounded-xl focus:border-primary focus:ring-primary text-white p-3" placeholder="John Doe" type="text"/>
+<input class="w-full bg-white/10 border-transparent rounded-xl focus:border-primary focus:ring-primary text-white p-3" id="contact-name" name="name" placeholder="John Doe" required type="text"/>
 </div>
 <div class="space-y-2">
 <label class="text-sm font-medium text-slate-400">School/Organization</label>
-<input class="w-full bg-white/10 border-transparent rounded-xl focus:border-primary focus:ring-primary text-white p-3" placeholder="Lagos Science Acad." type="text"/>
+<input class="w-full bg-white/10 border-transparent rounded-xl focus:border-primary focus:ring-primary text-white p-3" id="contact-organization" name="organization" placeholder="Lagos Science Acad." required type="text"/>
 </div>
 </div>
 <div class="space-y-2">
 <label class="text-sm font-medium text-slate-400">Message</label>
-<textarea class="w-full bg-white/10 border-transparent rounded-xl focus:border-primary focus:ring-primary text-white p-3" placeholder="Tell me about your project..." rows="4"></textarea>
+<textarea class="w-full bg-white/10 border-transparent rounded-xl focus:border-primary focus:ring-primary text-white p-3" id="contact-message" name="message" placeholder="Tell me about your project..." required rows="4"></textarea>
 </div>
-<button class="w-full bg-primary text-white py-4 rounded-xl font-bold hover:scale-[1.02] transition-transform shadow-lg shadow-primary/20">Send Message</button>
+<button class="w-full bg-primary text-white py-4 rounded-xl font-bold hover:scale-[1.02] transition-transform shadow-lg shadow-primary/20" type="submit">Send Message</button>
+<p class="text-xs text-slate-400 text-center">This opens WhatsApp with your message pre-filled.</p>
 </form>
 </div>
 </div>
@@ -455,7 +456,7 @@
 <div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-8">
 <div class="flex flex-col items-center md:items-start gap-2">
 <span class="text-xl font-bold text-slate-900 font-headline">Oluwatobi Kelani</span>
-<p class="text-slate-500 text-sm">© 2024 Oluwatobi Kelani. Precision Engineering &amp; Design.</p>
+<p class="text-slate-500 text-sm">© 2026 Oluwatobi Kelani.</p>
 </div>
 <div class="flex gap-8 text-sm font-medium">
 <a class="text-slate-600 hover:text-primary transition-colors" href="#">Home</a>
@@ -496,8 +497,42 @@
 </nav>
 <!-- Floating Action Button - Only for Relevant Task -->
 <div class="fixed bottom-24 right-6 md:bottom-12 md:right-12 z-40">
-<button class="w-16 h-16 rounded-full bg-primary text-white shadow-2xl flex items-center justify-center hover:scale-110 active:scale-90 transition-all">
+<a class="w-16 h-16 rounded-full bg-primary text-white shadow-2xl flex items-center justify-center hover:scale-110 active:scale-90 transition-all" id="whatsapp-fab" href="https://wa.me/2349123530688?text=Hello%20Oluwatobi,%0A%0AI%20visited%20your%20portfolio%20and%20I%27d%20like%20to%20discuss%20a%20workshop%20or%20project." target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
 <span class="material-symbols-outlined text-3xl" data-icon="chat">chat</span>
-</button>
+</a>
 </div>
-</body></html>
+<script>
+  (() => {
+    const whatsappNumber = "2349123530688";
+
+    const form = document.getElementById("contact-form");
+    const nameInput = document.getElementById("contact-name");
+    const organizationInput = document.getElementById("contact-organization");
+    const messageInput = document.getElementById("contact-message");
+
+    if (!form || !nameInput || !organizationInput || !messageInput) return;
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const name = nameInput.value.trim();
+      const organization = organizationInput.value.trim();
+      const message = messageInput.value.trim();
+
+      const text = [
+        "Hello Oluwatobi,",
+        "",
+        `Name: ${name}`,
+        `School/Organization: ${organization}`,
+        "",
+        "Message:",
+        message,
+      ].join("\n");
+
+      const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+
+      const win = window.open(url, "_blank", "noopener,noreferrer");
+      if (!win) window.location.href = url;
+    });
+  })();
+</script></body></html>

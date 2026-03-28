@@ -125,10 +125,10 @@
 </div>
 <div class="hidden md:block pb-2">
 <div class="flex gap-4">
-<a class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary transition-all duration-300" href="#">
+<a class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary transition-all duration-300" href="https://www.linkedin.com/in/oluwatobi-kelani-1275a919a">
 <span class="material-symbols-outlined">link</span>
 </a>
-<a class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary transition-all duration-300" href="#">
+<a class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary transition-all duration-300" href="https://github.com/Mattkelani">
 <span class="material-symbols-outlined">terminal</span>
 </a>
 </div>
@@ -140,24 +140,24 @@
 <!-- Contact Form Section -->
 <div class="lg:col-span-7 bg-surface-container-lowest p-8 md:p-12 rounded-xl shadow-[0_20px_40px_rgba(0,89,187,0.06)]">
 <h2 class="text-2xl font-bold tracking-tight text-on-surface mb-8">Inquiry Form</h2>
-<form class="space-y-6">
+<form class="space-y-6" id="contact-form">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <div class="space-y-2">
 <label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider ml-1">Full Name</label>
-<input class="w-full bg-surface-container-low border-none rounded-xl py-4 px-5 focus:ring-2 focus:ring-primary/30 transition-all outline-none text-on-surface" placeholder="John Doe" type="text"/>
+<input class="w-full bg-surface-container-low border-none rounded-xl py-4 px-5 focus:ring-2 focus:ring-primary/30 transition-all outline-none text-on-surface" id="contact-name" name="name" placeholder="John Doe" required type="text"/>
 </div>
 <div class="space-y-2">
 <label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider ml-1">School/Organization</label>
-<input class="w-full bg-surface-container-low border-none rounded-xl py-4 px-5 focus:ring-2 focus:ring-primary/30 transition-all outline-none text-on-surface" placeholder="Science Academy" type="text"/>
+<input class="w-full bg-surface-container-low border-none rounded-xl py-4 px-5 focus:ring-2 focus:ring-primary/30 transition-all outline-none text-on-surface" id="contact-organization" name="organization" placeholder="Science Academy" required type="text"/>
 </div>
 </div>
 <div class="space-y-2">
 <label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider ml-1">Email Address</label>
-<input class="w-full bg-surface-container-low border-none rounded-xl py-4 px-5 focus:ring-2 focus:ring-primary/30 transition-all outline-none text-on-surface" placeholder="john@example.edu" type="email"/>
+<input class="w-full bg-surface-container-low border-none rounded-xl py-4 px-5 focus:ring-2 focus:ring-primary/30 transition-all outline-none text-on-surface" id="contact-email" name="email" placeholder="john@example.edu" required type="email"/>
 </div>
 <div class="space-y-2">
 <label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider ml-1">Message</label>
-<textarea class="w-full bg-surface-container-low border-none rounded-xl py-4 px-5 focus:ring-2 focus:ring-primary/30 transition-all outline-none text-on-surface resize-none" placeholder="Tell me about your project or workshop needs..." rows="5"></textarea>
+<textarea class="w-full bg-surface-container-low border-none rounded-xl py-4 px-5 focus:ring-2 focus:ring-primary/30 transition-all outline-none text-on-surface resize-none" id="contact-message" name="message" placeholder="Tell me about your project or workshop needs..." required rows="5"></textarea>
 </div>
 <button class="w-full md:w-auto px-10 py-4 rounded-xl bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold text-lg hover:shadow-lg hover:scale-[1.02] active:scale-95 transition-all duration-200" type="submit">
                         Send Message
@@ -176,7 +176,7 @@
 </div>
 <div>
 <p class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Email</p>
-<p class="text-on-surface font-medium">o.kelani@theprecisionlab.com</p>
+<p class="text-on-surface font-medium">mattkelani97@gmail.com</p>
 </div>
 </div>
 <div class="flex items-center gap-5">
@@ -185,7 +185,7 @@
 </div>
 <div>
 <p class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Phone</p>
-<p class="text-on-surface font-medium">+234 (0) 800-PRECISION</p>
+<p class="text-on-surface font-medium">+234 (0) 912 353 0688</p>
 </div>
 </div>
 </div>
@@ -202,11 +202,11 @@
 <div class="bg-surface-container-low p-8 rounded-xl">
 <h3 class="text-xl font-bold tracking-tight text-on-surface mb-6">Social Network</h3>
 <div class="flex flex-wrap gap-3">
-<a class="flex items-center gap-3 px-5 py-3 rounded-full bg-surface-container-highest text-on-surface-variant hover:bg-primary-fixed-dim hover:text-on-primary-fixed transition-colors" href="#">
+<a class="flex items-center gap-3 px-5 py-3 rounded-full bg-surface-container-highest text-on-surface-variant hover:bg-primary-fixed-dim hover:text-on-primary-fixed transition-colors" href="https://www.linkedin.com/in/oluwatobi-kelani-1275a919a">
 <span class="text-sm font-bold tracking-tight">LinkedIn</span>
 <span class="material-symbols-outlined text-sm">north_east</span>
 </a>
-<a class="flex items-center gap-3 px-5 py-3 rounded-full bg-surface-container-highest text-on-surface-variant hover:bg-primary-fixed-dim hover:text-on-primary-fixed transition-colors" href="#">
+<a class="flex items-center gap-3 px-5 py-3 rounded-full bg-surface-container-highest text-on-surface-variant hover:bg-primary-fixed-dim hover:text-on-primary-fixed transition-colors" href="https://github.com/Mattkelani">
 <span class="text-sm font-bold tracking-tight">GitHub</span>
 <span class="material-symbols-outlined text-sm">north_east</span>
 </a>
@@ -242,6 +242,22 @@
 </div>
 </section>
 </main>
+<!--Footer-->
+<footer class="bg-slate-50 py-12 border-t border-slate-100">
+<div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="text-xl font-bold text-slate-900 font-headline">Oluwatobi Kelani</span>
+<p class="text-slate-500 text-sm">© 2026 Oluwatobi Kelani.</p>
+</div>
+<div class="flex gap-8 text-sm font-medium">
+<a class="text-slate-600 hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-slate-600 hover:text-primary transition-colors" href="project.html">Projects</a>
+<a class="text-slate-600 hover:text-primary transition-colors" href="contact.html">Contact</a>
+</div>
+
+</div>
+</footer>
+
 <!-- BottomNavBar (Mobile Only) -->
 <nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/90 backdrop-blur-xl border-t border-surface-variant md:hidden z-50">
 <a class="flex flex-col items-center justify-center text-primary font-bold" href="index.html">
@@ -263,8 +279,45 @@
 </nav>
 <!-- Floating Action Button - Only for Relevant Task -->
 <div class="fixed bottom-24 right-6 md:bottom-12 md:right-12 z-40">
-<button class="w-16 h-16 rounded-full bg-primary text-white shadow-2xl flex items-center justify-center hover:scale-110 active:scale-90 transition-all">
+<a class="w-16 h-16 rounded-full bg-primary text-white shadow-2xl flex items-center justify-center hover:scale-110 active:scale-90 transition-all" id="whatsapp-fab" href="https://wa.me/2349123530688?text=Hello%20Oluwatobi,%0A%0AI%20visited%20your%20portfolio%20and%20I%27d%20like%20to%20discuss%20a%20workshop%20or%20project." target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
 <span class="material-symbols-outlined text-3xl" data-icon="chat">chat</span>
-</button>
+</a>
 </div>
-</body></html>
+<script>
+  (() => {
+    const whatsappNumber = "2349123530688";
+
+    const form = document.getElementById("contact-form");
+    const nameInput = document.getElementById("contact-name");
+    const organizationInput = document.getElementById("contact-organization");
+    const emailInput = document.getElementById("contact-email");
+    const messageInput = document.getElementById("contact-message");
+
+    if (!form || !nameInput || !organizationInput || !emailInput || !messageInput) return;
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const name = nameInput.value.trim();
+      const organization = organizationInput.value.trim();
+      const email = emailInput.value.trim();
+      const message = messageInput.value.trim();
+
+      const text = [
+        "Hello Oluwatobi,",
+        "",
+        `Name: ${name}`,
+        `School/Organization: ${organization}`,
+        `Email: ${email}`,
+        "",
+        "Message:",
+        message,
+      ].join("\n");
+
+      const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+
+      const win = window.open(url, "_blank", "noopener,noreferrer");
+      if (!win) window.location.href = url;
+    });
+  })();
+</script></body></html>
